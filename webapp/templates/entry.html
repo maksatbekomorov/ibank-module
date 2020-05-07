@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form action="/cancel" method="post">
+<p>Ваша транзакция в обработке.</p>
+<img src="static/loader-1.gif" alt="loader" height="42" width="42">
+<p>Вы можете отменить транзакцию нажав кнопку:</p>
+<p><input type="submit" value="Отменить"></p>
+</form>
+{% endblock %}
